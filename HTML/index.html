@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!--lang is defined because, in search it will show and it will be usefull to translate-->
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"><!--imeta is used to give information about the website which will be shown in the search-->
     <meta name="author" content="Preya">
-    <meta name="decription" content="This page contains all the things I am learning how to create as I learn HTML.">
+    <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
     <title>MY First Web Page</title>
     <link rel="icon" href="html5.png" type="image/x-icon">
+    <!--relation = Defines a linked file’s relationship & type = Defines a file’s format(type is not required in modern HTML)-->
     <link rel="stylesheet" href="main.css" text="text/css">
 </head>
 
 <body>
     <header>
         <h1>My Goals for the Year</h1>
-
         <nav aria-labelledby="primary-navigation">
             <h2 id="primary-navigation">Primary Navigation</h2>
+            <!--id uniquely identifies a specific element and allows other code to target it.-->
             <ul>
                 <li>
-                    <a href="#html">Learn HTML</a>
+                    <a href="#html">Learn HTML</a><!--herf tells the browser: go to the library.-->
                 </li>
                 <li>
                     <a href="#vacation">Planning a Vacation</a>
@@ -27,22 +28,25 @@
                     <a href="#contact">Contact Me</a>
                 </li>
             </ul>
-        </nav>
+        </nav><!--<nav> describes the purpose of a link group.-->
     </header>
 
     <hr>
-    <main>
-        <article id="html">
+    <main><!-- The primary content of this page -->
+        <article id="html"><!--an independent topic(improve accessbility)-->
             <h2>I'm Ready to Learn HTML</h2>
             <p>This is my first web page.</p>
-            <section>
+            <section><!--groups related content within an article. A section normally should have a heading.-->
                 <h3>HTML5</h3>
                 <img src="img/html_logo_300x300.jpg" alt="HTML5 Logo" title="I am learning HTML5" width="300"
-                    height="300">
+                    height="300"><!--alternative text will be displayed when image can't be loaded-->
                 <figure>
                     <figcaption>An Example of HTML5 code</figcaption>
                     <p>
-                        <code>&lt;h1&gt;Hello World!;/h1&gt;</code>
+                        <code>&lt;h1&gt;Hello World!;/h1&gt;</code><!--<code> identifies the text as computer code. It is an inline element, so it can appear inside a paragraph.-->
+                    <pre><code>
+&lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;p&gt;Welcome!&lt;/p&gt;</code></pre><!--to display several lines of code, use <pre>-->
                     </p>
                 </figure>
             </section>
@@ -52,17 +56,17 @@
                 <ol>
                     <li>...I learn more about web dev.</li>
                     <li>...I plan out my schedule.</li>
-                    <li>...I use resources from <abbr title=" Mozilla Developer Network"><a
+                    <li>...I use resources from <abbr title="Mozilla Developer Network"><a
                                 href="https://developer.mozilla.org/">MDN</a></abbr>.</li>
                 </ol>
-                <aside>
-                    <details>
-                        <summary>Guss the <mark>number of hours</mark> I code per day.</summary>
+                <aside><!--<aside> marks related or secondary content.-->
+                    <details><!--<details> creates expandable/collapsible content.-->
+                        <summary>Guss the <mark>number of hours</mark> I code per day.</summary><!--<summary> provides the clickable title for <details>.-->
                         <p>I start at <time datetime="08:00">8am</time> and I write code for <time datetime="PT3H">3
                                 hours</time> every moring.</p>
                     </details>
                 </aside>
-                <br>
+                <br><!--<br> means break line. It moves the next content to the next line.-->
                 <table>
                     <caption>MYy Daily Schedule</caption>
                     <thead>
