@@ -142,7 +142,7 @@
                         <p>I've heard good things about the Caribbean.</p>
                         <figure>
                             <img src="img/caribbean.png" alt="Caribbean Beach"
-                                title="I want to visit a Caribbean beach." width="528" height="365" loading="lazy">
+                                title="I want to visit a Caribbean beach."width="528" height="365" loading="lazy">
                             <figcaption>
                                 Caribbean Beach Getaway
                             </figcaption>
@@ -188,19 +188,24 @@
             <h2>Contact Me</h2>
             <p>I'd really like to hear from you!</p>
 
-            <form action="https://httpbin.org/get" method="get">
+            <form action="https://httpbin.org/get" method="get"><!--get usually appends data to the URL
+            GET = data visible in the URL
+            POST = data hidden in the request body-->
                 <fieldset>
                     <legend>Personal Info</legend>
                     <p>
                         <label for="firstName"> First Name:</label>
+                        <!--The value of for must match the id of the input exactly.-->
                         <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on"
                             required="true" autofocus>
                     </p>
-                    <!--required alone is enough too-->
+                    <!--required alone is enough too without = true-->
                     <p>
                         <label for="lastName"> Last Name:</label>
                         <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on"
                             required="true">
+                    <!--id is used to uniquely identify one element on the page.
+                    name is used when the form is submitted.-->
                     </p>
                     <!--required alone is enough too
                     only one element can have autofocus in a tab-->
